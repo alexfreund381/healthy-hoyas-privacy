@@ -1,75 +1,235 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Healthy Hoyas Privacy Policy</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    h1 {
-      text-align: center;
-      color: #2a7ae2;
-    }
-    h2 {
-      margin-top: 30px;
-      color: #2a7ae2;
-    }
-    p, li {
-      font-size: 16px;
-    }
-    ul {
-      margin: 10px 0;
-      padding-left: 20px;
-    }
-    footer {
-      margin-top: 40px;
-      text-align: center;
-      font-size: 14px;
-      color: #777;
-    }
-  </style>
-</head>
-<body>
-  <h1>Privacy Policy – Healthy Hoyas</h1>
-  <p><strong>Effective Date:</strong> August 6, 2025</p>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Hoyas Privacy Policy</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px 24px;
+        background: linear-gradient(135deg, #f8fffe 0%, #e8f5e8 100%);
+        color: #2d5a3d;
+        min-height: 100vh;
+        position: relative;
+      }
 
-  <h2>1. Information We Collect</h2>
-  <ul>
-    <li>Email address and username</li>
-    <li>Age, Weight logs, Sleep Logs, Steps Logs, and Food/Nutrition Logs</li>
-  </ul>
+      /* Background circles for visual depth */
+      body::before,
+      body::after {
+        content: '';
+        position: fixed;
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: -1;
+      }
 
-  <h2>2. How We Use Your Information</h2>
-  <ul>
-    <li>To create and manage your Healthy Hoyas account</li>
-    <li>To log meals and track nutrition progress</li>
-    <li>To provide core app functionality</li>
-  </ul>
+      body::before {
+        width: 400px;
+        height: 400px;
+        background: #e8f5e8;
+        opacity: 0.3;
+        top: -200px;
+        right: -200px;
+      }
 
-  <h2>3. Data Storage and Security</h2>
-  <p>
-    Your data is securely stored using Supabase, with encryption in transit and at rest. 
-    Only you can access your account information.
-  </p>
+      body::after {
+        width: 300px;
+        height: 300px;
+        background: #d4edda;
+        opacity: 0.2;
+        bottom: -150px;
+        left: -150px;
+      }
 
-  <h2>4. Your Rights</h2>
-  <p>
-    You can delete your account at any time directly in the Healthy Hoyas app. 
-    Deleting your account will permanently remove all associated data, 
-    including your email, username, weight logs, and food/nutrition logs, from our servers.
-  </p>
+      .container {
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 20px;
+        padding: 40px;
+        box-shadow: 0 10px 30px rgba(69, 158, 122, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(212, 237, 218, 0.3);
+      }
 
-  <h2>5. Changes to This Policy</h2>
-  <p>
-    We may update this Privacy Policy periodically. Updates will be posted on this page with a new effective date.
-  </p>
-</body>
-</html>
+      h1 {
+        text-align: center;
+        color: #2d5a3d;
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        letter-spacing: -0.5px;
+      }
+
+      .subtitle {
+        text-align: center;
+        color: #4ade80;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 40px;
+      }
+
+      .effective-date {
+        text-align: center;
+        color: #6b8e7a;
+        font-size: 16px;
+        margin-bottom: 40px;
+        padding: 12px 24px;
+        background: #f0f9ff;
+        border-radius: 12px;
+        border: 1px solid #d4edda;
+      }
+
+      h2 {
+        margin: 32px 0 16px 0;
+        color: #2d5a3d;
+        font-size: 22px;
+        font-weight: 600;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #4ade80;
+        display: inline-block;
+      }
+
+      p, li {
+        font-size: 16px;
+        color: #2d5a3d;
+        margin-bottom: 12px;
+      }
+
+      ul {
+        margin: 16px 0;
+        padding-left: 0;
+      }
+
+      li {
+        list-style: none;
+        padding: 12px 20px;
+        margin-bottom: 8px;
+        background: rgba(232, 245, 232, 0.5);
+        border-radius: 12px;
+        border-left: 4px solid #4ade80;
+        position: relative;
+      }
+
+      li::before {
+        content: "✓";
+        color: #4ade80;
+        font-weight: bold;
+        font-size: 16px;
+        position: absolute;
+        left: 8px;
+        top: 12px;
+      }
+
+      .section {
+        margin-bottom: 32px;
+        padding: 24px;
+        background: rgba(248, 255, 254, 0.8);
+        border-radius: 16px;
+        border: 1px solid rgba(212, 237, 218, 0.5);
+      }
+
+      .highlight {
+        background: rgba(74, 222, 128, 0.1);
+        padding: 20px;
+        border-radius: 12px;
+        border-left: 4px solid #4ade80;
+        margin: 20px 0;
+      }
+
+      footer {
+        margin-top: 50px;
+        padding-top: 30px;
+        text-align: center;
+        font-size: 14px;
+        color: #6b8e7a;
+        border-top: 1px solid rgba(212, 237, 218, 0.5);
+      }
+
+      /* Mobile responsiveness */
+      @media (max-width: 768px) {
+        body {
+          padding: 20px 16px;
+        }
+
+        .container {
+          padding: 24px;
+          border-radius: 16px;
+        }
+
+        h1 {
+          font-size: 28px;
+        }
+
+        .section {
+          padding: 20px;
+        }
+
+        body::before,
+        body::after {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Privacy Policy</h1>
+      <div class="subtitle">Healthy Hoyas</div>
+      <div class="effective-date">
+        <strong>Effective Date:</strong> August 6, 2025
+      </div>
+
+      <div class="section">
+        <h2>1. Information We Collect</h2>
+        <ul>
+          <li>Email address and username</li>
+          <li>Age, Weight logs, Sleep Logs, Steps Logs, and Food/Nutrition Logs</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>2. How We Use Your Information</h2>
+        <ul>
+          <li>To create and manage your Healthy Hoyas account</li>
+          <li>To log meals and track nutrition progress</li>
+          <li>To provide core app functionality</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>3. Data Storage and Security</h2>
+        <div class="highlight">
+          <p>
+            Your data is securely stored using Supabase, with encryption in transit and at rest.
+            Only you can access your account information.
+          </p>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>4. Your Rights</h2>
+        <div class="highlight">
+          <p>
+            You can delete your account at any time directly in the Healthy Hoyas app.
+            Deleting your account will permanently remove all associated data,
+            including your email, username, weight logs, and food/nutrition logs, from our servers.
+          </p>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>5. Changes to This Policy</h2>
+        <p>
+          We may update this Privacy Policy periodically. Updates will be posted on this page with a new effective date.
+        </p>
+      </div>
+
+      <footer>
+        <p>© 2025 Healthy Hoyas. Your wellness journey starts here.</p>
+      </footer>
+    </div>
+  </body>
+  </html>
